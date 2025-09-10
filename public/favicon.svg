@@ -1,0 +1,45 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 樱花花朵渐变 -->
+    <radialGradient id="flowerGradientFav" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2BB673;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072CE;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="32" height="32" fill="#F8F9FA" rx="4"/>
+  
+  <!-- 樱花花朵主体 -->
+  <g transform="translate(16, 16)">
+    <!-- 花瓣1 (左上) -->
+    <ellipse cx="-3" cy="-5" rx="4" ry="6" fill="url(#flowerGradientFav)" transform="rotate(-45 -3 -5)"/>
+    <!-- 花瓣2 (右上) -->
+    <ellipse cx="3" cy="-5" rx="4" ry="6" fill="url(#flowerGradientFav)" transform="rotate(45 3 -5)"/>
+    <!-- 花瓣3 (右下) -->
+    <ellipse cx="3" cy="5" rx="4" ry="6" fill="url(#flowerGradientFav)" transform="rotate(135 3 5)"/>
+    <!-- 花瓣4 (左下) -->
+    <ellipse cx="-3" cy="5" rx="4" ry="6" fill="url(#flowerGradientFav)" transform="rotate(-135 -3 5)"/>
+    <!-- 花瓣5 (顶部) -->
+    <ellipse cx="0" cy="-6" rx="4" ry="6" fill="url(#flowerGradientFav)"/>
+    
+    <!-- 中心太阳 -->
+    <circle cx="0" cy="0" r="2.5" fill="#FFC300"/>
+    
+    <!-- 太阳光线 -->
+    <g stroke="#FFC300" stroke-width="0.8" fill="none" opacity="0.8">
+      <line x1="0" y1="-3.5" x2="0" y2="-5"/>
+      <line x1="2.5" y1="-2.5" x2="3.5" y2="-3.5"/>
+      <line x1="3.5" y1="0" x2="5" y2="0"/>
+      <line x1="2.5" y1="2.5" x2="3.5" y2="3.5"/>
+      <line x1="0" y1="3.5" x2="0" y2="5"/>
+      <line x1="-2.5" y1="2.5" x2="-3.5" y2="3.5"/>
+      <line x1="-3.5" y1="0" x2="-5" y2="0"/>
+      <line x1="-2.5" y1="-2.5" x2="-3.5" y2="-3.5"/>
+    </g>
+  </g>
+</svg>
+
+
+

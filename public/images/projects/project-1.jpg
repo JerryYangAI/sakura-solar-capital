@@ -1,0 +1,54 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E8B57;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="400" height="300" fill="url(#skyGradient)"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="200" width="400" height="100" fill="#8FBC8F"/>
+  
+  <!-- Solar Panels Array -->
+  <g transform="translate(50, 150)">
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+    <rect x="70" y="0" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+    <rect x="140" y="0" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+    <rect x="210" y="0" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+    
+    <!-- Row 2 -->
+    <rect x="0" y="50" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+    <rect x="70" y="50" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+    <rect x="140" y="50" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+    <rect x="210" y="50" width="60" height="40" fill="url(#panelGradient)" stroke="#1F4E3D" stroke-width="1"/>
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="320" cy="60" r="25" fill="#FFD700" opacity="0.8"/>
+  <g stroke="#FFD700" stroke-width="2" fill="none" opacity="0.6">
+    <line x1="320" y1="20" x2="320" y2="30"/>
+    <line x1="350" y1="60" x2="360" y2="60"/>
+    <line x1="320" y1="100" x2="320" y2="110"/>
+    <line x1="290" y1="60" x2="280" y2="60"/>
+    <line x1="340" y1="30" x2="345" y2="35"/>
+    <line x1="340" y1="90" x2="345" y2="85"/>
+    <line x1="300" y1="90" x2="295" y2="85"/>
+    <line x1="300" y1="30" x2="295" y2="35"/>
+  </g>
+  
+  <!-- Text Overlay -->
+  <rect x="0" y="0" width="400" height="60" fill="rgba(0,0,0,0.7)"/>
+  <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">日本太阳能电站项目 #001</text>
+  <text x="200" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFD700">投资额: 300万人民币 | 年化收益: 15%</text>
+</svg>
+
+
+
