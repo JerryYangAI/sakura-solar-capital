@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',   // ✅ 启用静态导出
   images: {
+    unoptimized: true,  // ✅ 必须加：禁用 Image Optimization，才能导出静态站点
     domains: ['images.unsplash.com'],
     formats: ['image/webp', 'image/avif'],
   },
